@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.bike {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.bike:hover {
+    transform: scale(1.05);
+}
+
+.bike img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bike-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.bike-info p {
+    margin: 10px 0;
+}
+
+.bike-info strong {
+    font-size: 1.2em;
+    color: #000;
+}
+
+.bike-info span {
+    font-weight: bold;
+    color: #000;
+}
+
+.book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.book-button:hover {
+    background-color: #218838;
+}

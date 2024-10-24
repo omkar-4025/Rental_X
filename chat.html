@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Chatbot</h2>
+        </div>
+        <div class="chat-box" id="chat-box">
+        </div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+        <div class="button-container">
+            <button onclick="handleOption('How to book')">How to Book?</button>
+            <button onclick="handleOption('Terms and Conditions')">Terms and Conditions</button>
+            <button onclick="handleOption('Pickup and drop off details')">Pick up and Drop off</button>
+            <button onclick="handleOption('Pickup Locations')">Pickup Locations</button>
+            <button onclick="handleOption('Issue with payments')">Issues with payment</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

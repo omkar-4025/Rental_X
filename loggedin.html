@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike rental website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script1.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+   <!-- header start  -->
+
+   <header class="header">
+    <a href="#" class="logo"><span>Rental</span>X</a>
+    <nav class="navbar"> 
+        <a href="#home">Home</a>
+        <a href="../proj/project/grid.html" target="_blank">Vehicles</a>
+        
+        <a href="#reviews">Reviews</a>
+        <a href="#contact us">contact</a>
+        
+    </nav>
+    <div class="user">
+    <p id="disp" style="float: right;"></p>
+    <div class="dropdown">
+        <i class="fas fa-user dropbtn"></i>
+        <div class="dropdown-content">
+          <a href="#" id="disp" style="float: right;"></a>
+          <a href="#" onclick="window.location.href='index.html'">Logout</a>
+        </div>
+      </div>
+    </div>
+    </div>
+   </header>
+    <!-- header ends -->
+<!-- login form -->
+<div class="login-form-container">
+    <span class="fas fa-times" id="close-login-form" onclick=""></span>
+    <form action="">
+        <h3>user login</h3>
+        <input type="username" placeholder="Enter Username here" class="box">
+        <input type="password" placeholder="Enter Password here" class="box">
+        <input type="submit" value="Login now" class="btn">
+        <p>don't have an account <a href="#" id="signup">Create One</a></p>
+    </form>
+</div>
+<div class="sign-form-container">
+    <span class="fas fa-times" id="close-sign-form" onclick=""></span>
+    <form action="">
+        <h3>user signup</h3>
+        <input type="email" placeholder="Enter E-mail here" class="box">
+        <input type="Name" placeholder="Enter your Name here" class="box">
+        <input type="UName" placeholder="Enter your Username here" class="box">
+        <input type="password" placeholder="Enter Password here" class="box">
+        <input type="password1" placeholder="Retype Password" class="box">
+        <input type="submit" value="Create Account" class="btn">
+        
+    </form>
+</div>
+
+<!-- close login here -->
+
+<!-- home section starts here -->
+<section class="home" id="home">
+    <h1 class="home-parallax" data-speed="-2">Find your Bikes</h1>
+    <img src="https://images.unsplash.com/photo-1530248809527-ee069dc8373a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cm95YWwlMjBlbmZpZWxkfGVufDB8fDB8fHww" alt="ss" class="home-parallax" data-speed="5" >
+    <a href="#" class="btn home-parallax" data-speed="7">Explore Bikes</a>
+</section>
+<!-- home ends here -->
+<!-- swipe starts here -->
+
+
+<section class="icons-container">
+    <div class="icons">
+        <i class="fas fa-home"></i>
+        <div class="content">
+            <h3>150+</h3>
+            <p>branches</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>Bikes rented</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-users"></i>
+        <div class="content">
+            <h3>100+</h3>
+            <p>happy clients</p>
+        </div>
+    </div>
+
+    <div class="icons">
+        <i class="fas fa-car"></i>
+        <div class="content">
+            <h3>1000+</h3>
+            <p>new bikes</p>
+        </div>
+    </div>
+    <div class="icons">
+        <i class="fas fa-cog"></i>
+        <div class="content">
+            <h3></h3>
+            <p>Fully Serviced bikes</p>
+        </div>
+    </div>
+    <div class="icons"> 
+        <i class="fas fa-fire"></i>
+        <div class="content">
+            <h3></h3>
+            <p>Exclusive Insurance </p>
+        </div>
+    </div>
+</section>
+<!-- checkoutpage -->
+<div class="checkout">
+    <img id="checkoutBikeImage">
+    <p id="checkoutBikeDetails"></p>
+    <button id="proceedToPayBtn" class="btn">Proceed to Pay</button>
+
+
+    <span class="fas fa-times" id="close-checkout" onclick=""></span>
+</div>
+<!-- swipe ends here -->
+
+<!-- vehicle section begins -->
+<section class="featured" id="featured">
+    <h1 class="heading"> popular<span>vehicles</span></h1>
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img id="bikeImage" src="assets/b1.jpg" alt="">
+                <div class="price"><span>price: </span> ₹650/Day</div>
+                <p id="bikeDetails">
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
+                </p>
+                <div id="check">
+                    <a href="webpages/webpage1.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+
+                </div>
+                
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/b2.png" alt="">
+                <div class="price"><span>price: </span> ₹700/Day</div>
+                <p>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>90km Travelled<br>
+                </p>
+                <a href="webpages/webpage2.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/b3.png">
+                <div class="price"><span>price: </span> ₹500/Day</div>
+                <p>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
+                </p>
+                <a href="webpages/webpage3.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/b4.png" alt="">
+                <div class="price"><span>price: </span> ₹1000/Day</div>
+                <p>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
+                </p>
+                <a href="webpages/webpage4.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/b5.png" alt="">
+                <div class="price"><span>price: </span> ₹1500/Day</div>
+                <p>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
+                </p>
+                <a href="webpages/webpage5.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="assets/b6.png" alt="">
+                <div class="price"><span>price: </span> ₹2000/Day</div>
+                <p>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Insuranced<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>2021<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>Gearless<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>petrol<br>
+                    <span class="fas fa-circle" style="color: #33aaff;"></span>100km Travelled<br>
+                </p>
+                <a href="webpages/webpage6.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- featured -->
+<section class="featured" id="featured">
+    <h1 class="heading"><span>featured</span>Bikes</h1>
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="assets/bike1.png" alt="">
+                <h3>Harley Davidson X440</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹3000/Day</div>
+                <a href="webpages/webpage11.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike2.png" alt="">
+                <h3>Honda Sport CBR 250R</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1450/Day</div>
+                <a href="webpages/webpage12.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike3.png" alt="">
+                <h3>Honda H’ness CB 350</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1300/Day</div>
+                <a href="webpages/webpage13.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike4.png" alt="">
+                <h3>Royal Enfield Himalayan</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹2000/Day</div>
+                <a href="webpages/webpage14.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike5.png" alt="">
+                <h3>Suzuki New V-Strom 250</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1800/Day</div>
+                <a href="webpages/webpage15.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike6.png" alt="">
+                <h3>Royal Enfield Hunter 350</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹2300/Day</div>
+                <a href="webpages/webpage16).html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike7.png" alt="">
+                <h3>KTM Adventure-X</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹2000/Day</div>
+                <a href="webpages/webpage17.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike8.png" alt="">
+                <h3>RoyalEnfield Himalayan 450</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹3000/Day</div>
+                <a href="webpages/webpage18.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike1.png" alt="">
+                <h3>Harley Davidson X440</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹3000/Day</div>
+                <a href="webpages/webpage11.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike2.png" alt="">
+                <h3> Honda Sport CBR 250R</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1450/Day</div>
+                <a href="webpages/webpage12.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike3.png" alt="">
+                <h3>Honda H’ness CB 350</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1300/Day</div>
+                <a href="webpages/webpage13.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike4.png" alt="">
+                <h3>Royal Enfield Himalayan</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹2000/Day</div>
+                <a href="webpages/webpage14.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+            
+            
+            <div class="swiper-slide box">
+                <img src="assets/bike5.png" alt="">
+                <h3>Suzuki New V-Strom 250</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹1800/Day</div>
+                <a href="webpages/webpage15.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike6.png" alt="">
+                <h3>Royal Enfield Hunter 350</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                </div>
+                <div class="price">₹2300/Day</div>
+                <a href="webpages/webpage16).html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike7.png" alt="">
+                <h3>KTM Adventure-X</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹2000/Day</div>
+                <a href="webpages/webpage17.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="assets/bike8.png" alt="">
+                <h3>RoyalEnfield Himalayan 450</h3>
+                <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                </div>
+                <div class="price">₹3000/Day</div>
+                <a href="webpages/webpage18.html" class="btn" id="click" onclick="window.open(this.href, '_blank', 'noopener,noreferrer'); return false;">Check out</a>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+<!-- featured fin -->
+
+<!-- newsletter here -->
+<section class="newsletter">
+    <h3>Subscribe for latest updates</h3>
+    <p>Provide us with your mail to receive daily updates.</p>
+    <form action="">
+        <input type="email" placeholder="Enter Your Email" name="email" id="email">
+        <input type="submit" class="subscribe" value="Subscribe" id="open-popup-btn">
+    </form>
+</section>
+<!-- news end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer starts here -->
+<!--review section -->
+
+<!-- contact start here -->
+<section class="contact" id="contact us">
+    <h1 class="heading"><span>contact </span>us</h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3939.6684481865404!2d76.4918194!3d9.093937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0602e7b4a2049d%3A0x3af3246b5138db0f!2sAmrita%20Vishwa%20Vidyapeetham%2C%20Amritapuri!5e0!3m2!1sen!2sin!4v1715104480625!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <form action="">
+            <h3>get in touch</h3>
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box" id="mail">
+            <input type="text" name="number" placeholder="Number" class="box" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number">
+            <textarea placeholder="message" class="box" cols="30" rows="10"></textarea>
+            <input type="submit" value="send message" class="btn" id="open-btn" onclick="">
+        </form>
+    </div>
+
+    <div id="contact-component"></div>
+
+    <!-- React component code -->
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script type="module">
+        import Contact from './contact.js'; // Ensure correct path to contact.js
+        ReactDOM.render(React.createElement(Contact), document.getElementById('contact-component'));
+    </script>
+</section>
+<!-- contact fin -->
+<section class="footer">
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our branches </h3>
+            <a href="#"><i class="map-alt">India</i></a>
+            <a href="#"><i class="map-alt">Kenya</i></a>
+            <a href="#"><i class="map-alt">Canada</i></a>
+            <a href="#"><i class="map-alt">Korea</i></a>
+            <a href="#"><i class="map-alt">Australia</i></a>
+            <a href="#"><i class="map-alt">France</i></a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>vehicles</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>services</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>featured</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>reviews</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>contact</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-phone"></i>+91 346 635 8729</a>
+            <a href="#"><i class="fas fa-phone"></i>+91 111 111 1111</a>
+            <a href="#"><i class="fas fa-envelope"></i>rentalx@gmail.com</a>
+            <a href="#"><i class="map-marker"></i>Hyderabad, india 690518</a>
+        </div>
+        <div class="box">
+            <h3>social media</h3>
+            <a href="#"><i class="fab fa-facebook"></i>facebook</a>
+            <a href="#"><i class="fab fa-instagram"></i>instagram</a>
+            <a href="#"><i class="fab fa-twitter"></i>twitter</a>
+            <a href="#"><i class="fab fa-linkedin"></i>linkedin</a>
+            <a href="#"><i class="fab fa-pintrest"></i>pintrest</a>
+            <a href="#"><i class="fab fa-redit"></i>redit</a>
+        </div>
+
+    </div>
+    
+</section>
+<div class="end">Made by RentalX | All rights reserved &copy</div>
+<!-- footer ends -->
+
+<!-- for chat bot -->
+
+<div class="chatbot">
+    
+    <iframe src="../proj/Chat bot/chat.html"></iframe>
+    
+</div>
+<div class="gojo"><img src="../proj/assets/gojo.jpeg" id="gojo" onclick=""></div>
+</body>
+</html>
+
